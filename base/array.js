@@ -27,3 +27,19 @@ let map = {"name": "kolnick", "age": 18};
 console.log(map.name);
 console.log(map.age);
 
+// 合并数组
+// ES5
+{
+    let params = ['hello', true, 7];
+
+    let other = [1, 2].concat(params);
+    console.log(other);
+}
+
+// ES6
+{
+    let params = ['hello', true, 7];
+    // 利用可变参数运算符进行合并数组
+    let other = [1, 2, ...params];
+    console.log(other);
+}
