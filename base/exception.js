@@ -1,5 +1,5 @@
 try {
-    var d = xx / 11;
+    var d = myObject / 11;
 } catch (e) {
      console.log(e);
 } finally {

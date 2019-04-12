@@ -4,23 +4,20 @@ Object.prototype.bar = 1;
 
 console.log(Object.prototype.bar);
 
+// 声明一个对象
+let myObject = {goo: null};
 
-let xx = {goo: null};
 
-
-let hasProperty = xx.hasOwnProperty('bar');
+let hasProperty = myObject.hasOwnProperty('bar');
 console.log(hasProperty);
-let d = xx.hasOwnProperty('goo');
 
-console.log(d);
-
-
+// 声明一个对象
 function Point(x, y) {
     this.x = x;
     this.y = y;
 }
 
-//
+// 扩展一个对象函数
 Point.prototype.showCode = function () {
     console.log("x=" + this.x + "-----y=" + this.y);
 };
@@ -36,7 +33,6 @@ console.log("point---" + point1.x);
 
 // 定义一个对象并赋值
 var obj = {name: "kolnick", age: 18};
-
 console.log(obj.age);
 
 
@@ -107,4 +103,18 @@ console.log(obj.age);
 
 }
 
-
+// ES6 简化对象的简写方式
+let myObj = {
+    name: 'myObj kolnick',
+    age: 19,
+    getName() {
+        return this.name;
+    },
+    setName(name) {
+        this.name = name;
+    },
+};
+let name = myObj.getName();
+console.log(name);
+myObj.setName('ddd');
+console.log(myObj.getName());

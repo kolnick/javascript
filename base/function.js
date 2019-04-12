@@ -1,11 +1,14 @@
+// 声明函数
 function sum(a, b) {
     return a + b;
 }
 
+// 调用函数
 let sum1 = sum(1, 2);
 
 console.log(sum1);
 
+// 声明
 var max = 10;
 fn = function (x) {
     if (x > max) {
@@ -13,6 +16,7 @@ fn = function (x) {
     }
 };
 
+//
 (function (f) {
     var max = 100;
     f(15);
@@ -21,7 +25,7 @@ fn = function (x) {
 (fn);
 
 
-// ES5/ES3  默认参数
+// ES3/ES5  默认参数
 function ff(x, y, z) {
     if (y === undefined) {
         y = 7;
@@ -72,16 +76,7 @@ console.log(ff(30, 50));
 
     console.log(mulParams(1, 2, 3, 4, 5));
 
-    //ES6 可变参数列表
-    function es6MulParams(...params) {
-        let sum = 0;
-        params.forEach(item => {
-            sum += item;
-        });
-        return sum;
-    }
 
-    let number = es6MulParams(1, 2, 3, 4);
-    console.log(number)
 }
 
+//

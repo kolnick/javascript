@@ -1,6 +1,8 @@
+// 数组的定义
 let array = [1, 2, 3, 4];
 console.log(array);
 
+// 声明一个含有5个元素的数组
 let t = new Array(5);
 
 console.log(t);
@@ -14,24 +16,10 @@ let reverse = array.reverse();
 console.log(reverse);
 
 
-let second = [{x: 0}, {y: 0}, {z: 1}];
-
-
-console.log(second[0].x);
-
-console.log(second);
-
-
-let map = {"name": "kolnick", "age": 18};
-
-console.log(map.name);
-console.log(map.age);
-
 // 合并数组
 // ES5
 {
     let params = ['hello', true, 7];
-
     let other = [1, 2].concat(params);
     console.log(other);
 }

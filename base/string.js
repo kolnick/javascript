@@ -1,8 +1,10 @@
-let string = new String("hello world");
+// 创建一个字符串
+let string = String("hello world");
 
 console.log(string);
 let str = 'hello';
 
+// 连接字符串
 let s = str.concat(" world welcome");
 console.log("连接后的字符串" + s);
 
@@ -18,5 +20,11 @@ console.log("----------遍历字符串数组--------")
 for (let i = 0; i < len; i++) {
     console.log(strArr[i]);
 }
+// 转换成大写
+console.log(keyWorld.toUpperCase());
 
-console.log(keyWorld.toUpperCase())
+
+let obj = {name: 'kolnick'};
+// 模板字符串
+let xxx = `my name:${obj.name}`;
+console.log(xxx);
