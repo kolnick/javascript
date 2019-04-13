@@ -20,13 +20,12 @@ let promise = new Promise((resolve, reject) => {
 
         // 异步任务执行成功
 
-       // resolve(); // 修改promise状态  fullfilled
-
-        reject();
+        // resolve(); // 修改promise状态  fullfilled
+        reject(555);
     }, 2000);
 }).then(() => {
     //成功回调
     console.log(123);
-}, () => {
-    console.log("失败了");
+}, (x) => {
+    console.log("失败了", x);
 });
