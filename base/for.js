@@ -15,6 +15,7 @@ function aFun1() {
 aFun1();
 
 console.log("-------------");
+
 function aFun2() {
     // i 对于for循环外的范围是可见的
     for (var i = 1; i < 5; i++) {
